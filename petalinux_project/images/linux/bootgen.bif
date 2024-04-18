@@ -1,0 +1,8 @@
+the_ROM_image:
+{
+	[bootloader] /media/bigdrive/UserSpace/agazdecki_bigdrive/axi_quad_spi_and_petalinux/petalinux_project/images/linux/zynq_fsbl.elf
+	/media/bigdrive/UserSpace/agazdecki_bigdrive/axi_quad_spi_and_petalinux/petalinux_project/project-spec/hw-description/design_1_wrapper.bit
+	/media/bigdrive/UserSpace/agazdecki_bigdrive/axi_quad_spi_and_petalinux/petalinux_project/images/linux/u-boot.elf
+	[load=0x00100000] /media/bigdrive/UserSpace/agazdecki_bigdrive/axi_quad_spi_and_petalinux/petalinux_project/images/linux/system.dtb
+	[offset=0x9C0000, partition_owner=uboot] /media/bigdrive/UserSpace/agazdecki_bigdrive/axi_quad_spi_and_petalinux/petalinux_project/images/linux/boot.scr
+}
