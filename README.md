@@ -4,7 +4,7 @@
 To use the axi_quad_spi v3.2 IP with either [this linux driver](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842255/Linux+SPI+Driver#LinuxSPIDriver-DevicetreeSettings) or a manually written one if needed. I'm trying to interact with multiple ICs as SPI Slaves for configuring them and receiving their data. Petalinux is required for multiple other seperate and threaded applications.
 
 ## Vivado Project.
-<img src="https://github.com/ZeHolyQofPower/axi_quad_spi_and_petalinux/block_diagram.png" width="400" height="400"/>
+<img src="https://github.com/ZeHolyQofPower/axi_quad_spi_and_petalinux/blob/main/block_diagram.png" width="800" height="400"/>
 
 First round, I added, configured, and connected all components and ports *except* "axi_quad_spi_0". I went through the complete process to boot, and everything worked exactly as expected. 
 
@@ -17,7 +17,7 @@ First round, I created the project from template, configured the root filesystem
 Second round, I sourced the new xsa, defined spidev in the device tree, rebuilt, repackaged, reflashed an expanded filesystem; while booting, the Petalinux kernel hangs.
 
 [//]: # ( TODO Maybe mention the four memory warnings I get while packaging? )
-[//]: # ( <img src="https://github.com/ZeHolyQofPower/axi_quad_spi_and_petalinux/package_warnings.png" width="400" height="400"/> )
+[//]: # ( <img src="https://github.com/ZeHolyQofPower/axi_quad_spi_and_petalinux/blob/main/package_warnings.png" width="400" height="400"/> )
 
 ## Result:
 
