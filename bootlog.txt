@@ -1,0 +1,315 @@
+U-Boot 2022.01 (Apr 04 2022 - 07:53:54 +0000)
+
+CPU:   Zynq 7z020
+Silicon: v3.1
+DRAM:  ECC disabled 512 MiB
+Flash: 0 Bytes
+NAND:  0 MiB
+MMC:   mmc@e0100000: 0, mmc@e0101000: 1
+Loading Environment from SPIFlash... SF: Detected is25lp016d with page size 256 Bytes, erase size 64 KiB, total 2 MiB
+*** Warning - bad CRC, using default environment
+
+In:    serial@e0000000
+Out:   serial@e0000000
+Err:   serial@e0000000
+Net:
+ZYNQ GEM: e000b000, mdio bus e000b000, phyaddr -1, interface rgmii-id
+eth0: ethernet@e000b000
+Hit any key to stop autoboot:  0
+starting USB...
+Bus usb@e0002000: USB EHCI 1.00
+scanning bus usb@e0002000 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+Couldn't find partition usb 0
+Can't set block device
+Failed to load 'system.bit.bin'
+fpga - loadable FPGA image support
+
+Usage:
+fpga [operation type] [device number] [image address] [image size]
+fpga operations:
+  dump  [dev] [address] [size]  Load device to memory buffer
+  info  [dev]                   list known device information
+  load  [dev] [address] [size]  Load device from memory buffer
+  loadp [dev] [address] [size]  Load device from memory buffer with partial bitstream
+  loadb [dev] [address] [size]  Load device from bitstream buffer (Xilinx only)
+  loadbp        [dev] [address] [size]  Load device from bitstream buffer with partial bitstream(Xilinx only)
+Load device from filesystem (FAT by default) (Xilinx only)
+  loadfs [dev] [address] [image size] [blocksize] <interface>
+        [<dev[:part]>] <filename>
+  loadmk [dev] [address]        Load device generated with mkimage
+        For loadmk operating on FIT format uImage address must include
+        subimage unit name in the form of addr:<subimg_uname>
+SF: Detected is25lp016d with page size 256 Bytes, erase size 64 KiB, total 2 MiB
+Offset exceeds device limit
+sf - SPI flash sub-system
+
+Usage:
+sf probe [[bus:]cs] [hz] [mode] - init flash device on given SPI bus
+                                  and chip select
+sf read addr offset|partition len       - read `len' bytes starting at
+                                          `offset' or from start of mtd
+                                          `partition'to memory at `addr'
+sf write addr offset|partition len      - write `len' bytes from memory
+                                          at `addr' to flash at `offset'
+                                          or to start of mtd `partition'
+sf erase offset|partition [+]len        - erase `len' bytes from `offset'
+                                          or from start of mtd `partition'
+                                         `+len' round up `len' to block size
+sf update addr offset|partition len     - erase and write `len' bytes from memory
+                                          at `addr' to flash at `offset'
+                                          or to start of mtd `partition'
+sf protect lock/unlock sector len       - protect/unprotect 'len' bytes starting
+                                          at address 'sector'
+
+sf test offset len              - run a very basic destructive test
+QSPI: SCRIPT FAILED: continuing...
+JTAG: Trying to boot script at 3000000
+## Executing script at 03000000
+Wrong image format for "source" command
+JTAG: SCRIPT FAILED: continuing...
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+Found U-Boot script /boot.scr
+2776 bytes read in 13 ms (208 KiB/s)
+## Executing script at 03000000
+Trying to load boot images from qspi
+SF: Detected is25lp016d with page size 256 Bytes, erase size 64 KiB, total 2 MiB
+Offset exceeds device limit
+sf - SPI flash sub-system
+
+Usage:
+sf probe [[bus:]cs] [hz] [mode] - init flash device on given SPI bus
+                                  and chip select
+sf read addr offset|partition len       - read `len' bytes starting at
+                                          `offset' or from start of mtd
+                                          `partition'to memory at `addr'
+sf write addr offset|partition len      - write `len' bytes from memory
+                                          at `addr' to flash at `offset'
+                                          or to start of mtd `partition'
+sf erase offset|partition [+]len        - erase `len' bytes from `offset'
+                                          or from start of mtd `partition'
+                                         `+len' round up `len' to block size
+sf update addr offset|partition len     - erase and write `len' bytes from memory
+                                          at `addr' to flash at `offset'
+                                          or to start of mtd `partition'
+sf protect lock/unlock sector len       - protect/unprotect 'len' bytes starting
+                                          at address 'sector'
+
+sf test offset len              - run a very basic destructive test
+Wrong Image Format for bootm command
+ERROR: can't get kernel image!
+Booting using Fit image failed
+Offset exceeds device limit
+sf - SPI flash sub-system
+
+Usage:
+sf probe [[bus:]cs] [hz] [mode] - init flash device on given SPI bus
+                                  and chip select
+sf read addr offset|partition len       - read `len' bytes starting at
+                                          `offset' or from start of mtd
+                                          `partition'to memory at `addr'
+sf write addr offset|partition len      - write `len' bytes from memory
+                                          at `addr' to flash at `offset'
+                                          or to start of mtd `partition'
+sf erase offset|partition [+]len        - erase `len' bytes from `offset'
+                                          or from start of mtd `partition'
+                                         `+len' round up `len' to block size
+sf update addr offset|partition len     - erase and write `len' bytes from memory
+                                          at `addr' to flash at `offset'
+                                          or to start of mtd `partition'
+sf protect lock/unlock sector len       - protect/unprotect 'len' bytes starting
+                                          at address 'sector'
+
+sf test offset len              - run a very basic destructive test
+Offset exceeds device limit
+sf - SPI flash sub-system
+
+Usage:
+sf probe [[bus:]cs] [hz] [mode] - init flash device on given SPI bus
+                                  and chip select
+sf read addr offset|partition len       - read `len' bytes starting at
+                                          `offset' or from start of mtd
+                                          `partition'to memory at `addr'
+sf write addr offset|partition len      - write `len' bytes from memory
+                                          at `addr' to flash at `offset'
+                                          or to start of mtd `partition'
+sf erase offset|partition [+]len        - erase `len' bytes from `offset'
+                                          or from start of mtd `partition'
+                                         `+len' round up `len' to block size
+sf update addr offset|partition len     - erase and write `len' bytes from memory
+                                          at `addr' to flash at `offset'
+                                          or to start of mtd `partition'
+sf protect lock/unlock sector len       - protect/unprotect 'len' bytes starting
+                                          at address 'sector'
+
+sf test offset len              - run a very basic destructive test
+Wrong Image Format for bootm command
+ERROR: can't get kernel image!
+Booting using Separate images failed
+Trying to load boot images from jtag
+Wrong Image Format for bootm command
+ERROR: can't get kernel image!
+Trying to load boot images from mmc0
+4554068 bytes read in 266 ms (16.3 MiB/s)
+## Loading kernel from FIT Image at 10000000 ...
+   Using 'conf-system-top.dtb' configuration
+   Verifying Hash Integrity ... OK
+   Trying 'kernel-1' kernel subimage
+     Description:  Linux kernel
+     Type:         Kernel Image
+     Compression:  uncompressed
+     Data Start:   0x100000fc
+     Data Size:    4532576 Bytes = 4.3 MiB
+     Architecture: ARM
+     OS:           Linux
+     Load Address: 0x00200000
+     Entry Point:  0x00200000
+     Hash algo:    sha256
+     Hash value:   959a4fc8741961adbda869c66c88a0d030a497697b40ddef5f161d6f1d35f2be
+   Verifying Hash Integrity ... sha256+ OK
+## Loading fdt from FIT Image at 10000000 ...
+   Using 'conf-system-top.dtb' configuration
+   Verifying Hash Integrity ... OK
+   Trying 'fdt-system-top.dtb' fdt subimage
+     Description:  Flattened Device Tree blob
+     Type:         Flat Device Tree
+     Compression:  uncompressed
+     Data Start:   0x10452b68
+     Data Size:    19592 Bytes = 19.1 KiB
+     Architecture: ARM
+     Hash algo:    sha256
+     Hash value:   5ca65197563c307bfabaf6fd56b4d851adaf0376cbf6d9af694fd845f5e73db6
+   Verifying Hash Integrity ... sha256+ OK
+   Booting using the fdt blob at 0x10452b68
+   Loading Kernel Image
+   Loading Device Tree to 1ead3000, end 1eadac87 ... OK
+
+Starting kernel ...
+
+Booting Linux on physical CPU 0x0
+Linux version 5.15.19-xilinx-v2022.1 (oe-user@oe-host) (arm-xilinx-linux-gnueabi-gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37.20210721) #1 SMP PREEMPT Mon Apr 11 17:52:14 UTC 2022
+CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=18c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+OF: fdt: Machine model: xlnx,zynq-7000
+earlycon: cdns0 at MMIO 0xe0000000 (options '115200n8')
+printk: bootconsole [cdns0] enabled
+Memory policy: Data cache writealloc
+cma: Reserved 16 MiB at 0x1f000000
+Zone ranges:
+  Normal   [mem 0x0000000000000000-0x000000001fffffff]
+  HighMem  empty
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000000000000-0x000000001fffffff]
+Initmem setup node 0 [mem 0x0000000000000000-0x000000001fffffff]
+percpu: Embedded 12 pages/cpu s16588 r8192 d24372 u49152
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+Kernel command line: console=ttyPS0,115200 earlycon root=/dev/mmcblk0p2 rw rootwait
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+mem auto-init: stack:off, heap alloc:off, heap free:off
+Memory: 491060K/524288K available (7168K kernel code, 246K rwdata, 1892K rodata, 1024K init, 119K bss, 16844K reserved, 16384K cma-reserved, 0K highmem)
+rcu: Preemptible hierarchical RCU implementation.
+rcu:    RCU event tracing is enabled.
+rcu:    RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+        Trampoline variant of Tasks RCU enabled.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+efuse mapped to (ptrval)
+slcr mapped to (ptrval)
+GIC physical location is 0xf8f01000
+L2C: platform modifies aux control register: 0x72360000 -> 0x72760000
+L2C: DT/platform modifies aux control register: 0x72360000 -> 0x72760000
+L2C-310 erratum 769419 enabled
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 ID prefetch enabled, offset 1 lines
+L2C-310 dynamic clock gating enabled, standby mode enabled
+L2C-310 cache controller enabled, 8 ways, 512 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x76760001
+random: get_random_bytes called from start_kernel+0x364/0x5d4 with crng_init=0
+zynq_clock_init: clkc starts at (ptrval)
+Zynq clock init
+sched_clock: 64 bits at 166MHz, resolution 6ns, wraps every 4398046511103ns
+clocksource: arm_global_timer: mask: 0xffffffffffffffff max_cycles: 0x26703d7dd8, max_idle_ns: 440795208065 ns
+Switching to timer-based delay loop, resolution 6ns
+Console: colour dummy device 80x30
+Calibrating delay loop (skipped), value calculated using timer frequency.. 333.33 BogoMIPS (lpj=1666666)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x100000 - 0x100060
+rcu: Hierarchical SRCU implementation.
+smp: Bringing up secondary CPUs ...
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+CPU1: Spectre v2: using BPIALL workaround
+smp: Brought up 1 node, 2 CPUs
+SMP: Total of 2 processors activated (666.66 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+pinctrl core: initialized pinctrl subsystem
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+thermal_sys: Registered thermal governor 'step_wise'
+cpuidle: using governor menu
+amba f8801000.etb: Fixing up cyclic dependency with replicator
+amba f8803000.tpiu: Fixing up cyclic dependency with replicator
+amba f8804000.funnel: Fixing up cyclic dependency with replicator
+amba f889c000.ptm: Fixing up cyclic dependency with f8804000.funnel
+amba f889d000.ptm: Fixing up cyclic dependency with f8804000.funnel
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 4 bytes.
+zynq-ocm f800c000.ocmc: ZYNQ OCM pool: 256 KiB @ 0x(ptrval)
+e0000000.serial: ttyPS0 at MMIO 0xe0000000 (irq = 33, base_baud = 6249999) is a xuartps
+printk: console [ttyPS0] enabled
+printk: console [ttyPS0] enabled
+printk: bootconsole [cdns0] disabled
+printk: bootconsole [cdns0] disabled
+vgaarb: loaded
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+mc: Linux media interface: v0.10
+videodev: Linux video capture interface: v2.00
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+EDAC MC: Ver: 3.0.0
+FPGA manager framework
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm_global_timer
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 3, 32768 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 64
+armv7-pmu f8891000.pmu: hw perfevents: no interrupt-affinity property, guessing.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+io scheduler mq-deadline registered
+io scheduler kyber registered
+zynq-pinctrl 700.pinctrl: zynq pinctrl initialized
+dma-pl330 f8003000.dmac: Loaded driver for PL330 DMAC-241330
+dma-pl330 f8003000.dmac:        DBUFF-128x8bytes Num_Chans-8 Num_Peri-4 Num_Events-16
+brd: module loaded
+loop: module loaded
