@@ -11,7 +11,7 @@ hw_config_tui:
 	petalinux-config --get-hw-description=../vivado_project/
 
 package: build
-	petalinux-package --boot --force --fsbl --u-boot --boot-script --boot-device=sd
+	petalinux-package --boot --force --fsbl --fpga --u-boot --boot-script --boot-device=sd
 
 add_image_to_git_stage:
 	git add images/*
